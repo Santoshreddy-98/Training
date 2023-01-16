@@ -32,6 +32,7 @@ import Product2 from './components/Product2';
 import Product3 from './components/Product3';
 import Product4 from './components/Product4';
 import Product5 from './components/Product5';
+import Bootstrapreact from './components/Bootstrapreact';
 
 function App() {
 
@@ -62,6 +63,7 @@ function App() {
     // className="App"
     
     <Routes>
+
         <Route path='/' element={<Homepage />}/>
         <Route path='login' element={<Studenlogin />}/>
         <Route path='signup' element={<Signup getValue = {getValue}/>}/>
@@ -90,6 +92,9 @@ function App() {
         <Route path='product3' element={<Product3 />} />
         <Route path='product4' element={<Product4 />} />
         <Route path='product5' element={<Product5 />} />
+
+
+        <Route path="/veera" element={<Bootstrapreact/>}/>
 
 
     </Routes>

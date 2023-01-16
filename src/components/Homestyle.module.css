@@ -401,7 +401,7 @@ a {
 }
 @media screen and (min-width:1250px) and (max-width:1290px){
     .marquee{
-        height: 405px;
+        height: 255px;
     }
 }
 @media screen and (min-width:760px) and (max-width:790px){

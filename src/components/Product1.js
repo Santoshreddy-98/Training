@@ -1,57 +1,44 @@
-import React from 'react';
-import prod from './product.css';
-import Header from './Header1'
-import kalam from '../images/kalam.png';
-import homestyle from './Homestyle.module.css';
-import CardDetails from './VlsiDetails'
+import vlsiDetails from './VlsiDetails'
+import React from 'react'
+import Button from 'react-bootstrap/Button';
+import Card from 'react-bootstrap/Card';
+import Header from './Header';
+import "../bstyles.css"
+import { Link } from 'react-router-dom';
+const product1 = () => {
+    return (
+        <div>
 
-
-export default function Product1() {
-  
-  return (
-    <React.Fragment>
-    <Header />
-   
-    <div><h1 style={{color:"red", textAlign:"center"}}>VLSI COURSES</h1></div>
-    <div className={homestyle.outerBody}>
-        <div className={homestyle.cardBody}>
-          {
-            CardDetails.map((icon, index) => {
-              return (
-
-                <div className={homestyle.container} key={index}>
-                  <div className={homestyle.card}>
-                    <div className={`${homestyle.face} ${homestyle.face1}`}>
-                      <div style={{backgroundColor:"Pink"}}>
-                      <div className={homestyle.card_img}>
-                        <img src={icon.page} />
-                        <h3 style={{ "font-size": "15px",backgroundColor:"lightblue", }}>{icon.CourseName}</h3>
-                      </div></div>
-                    </div>
-                    <div className={`${homestyle.face} ${homestyle.face2}`}>
-                      <div className={homestyle.content}>
-                        <p><br/>Duration:{icon.CourseDuration}<br />Price:{icon.Fee}</p>
-                        {/* <Link to='syllabus'>View</Link> */}
-                      </div>
-
-                    </div>
-                  </div>
-
-
-
-
-                </div>
-              )
-            })
-          }
+            <div style={{ height: '5rem' }}>
+                <Header/>
+            </div>
+            <div>
+               <center><h1 className='cdiv' style={{padding:"10px",marginBottom:"40px"}}>VLSI</h1></center>
+            </div>
+            <div>
+                {
+                    vlsiDetails.length > 0 ? <div  style={{display:"flex",justifyContent:"space-between",flexWrap:"wrap",margin:"0px auto", height: "auto",width:"95%" }}>
+                        {
+                            vlsiDetails.map((item, index) => <div style={{marginBottom:"20px"}} key={index}>
+                                <Card className='carddiv'>
+                                    <img style={{ borderRadius: "20px", padding: "10px", width: "16rem", height: "16rem" }} variant="top" src={item.page} />
+                                    <Card.Body>
+                                        <Card.Title>{item.CourseName}</Card.Title>
+                                        <Card.Text>
+                                            <span style={{ fontWeight: "500" }}>Course Duration:</span> {item.CourseDuration}
+                                        </Card.Text>
+                                        <Card.Text>
+                                            <span style={{ fontWeight: "500" }}>Fee:</span>${item.Fee}
+                                        </Card.Text>
+                                        <Link style={{textDecoration:"none"}} to="/login"> <Button variant="primary">Join Now  </Button></Link>
+                                    </Card.Body>
+                                </Card>
+                            </div>)
+                        }
+                    </div> : <p></p>
+                }
+            </div>
         </div>
-      </div>
-
-
-
-
-    </React.Fragment>
-  );
+    )
 }
-
-
+export default product1

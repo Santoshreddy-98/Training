@@ -1,11 +1,11 @@
-import DataScienceDetails from './DataScience'
 import React from 'react'
 import Button from 'react-bootstrap/Button';
 import Card from 'react-bootstrap/Card';
+import EmbeddedDetails from './EmbeddedDetails';
 import Header from './Header';
 import "../bstyles.css"
 import { Link } from 'react-router-dom';
-const product3 = () => {
+const Bootstrapreact = () => {
     return (
         <div>
 
@@ -13,13 +13,13 @@ const product3 = () => {
                 <Header/>
             </div>
             <div>
-               <center><h1 className='cdiv' style={{padding:"10px",marginBottom:"40px"}}>DataScience</h1></center>
+               <center><h1 className='cdiv' style={{padding:"10px",marginBottom:"40px"}}>Embedded System</h1></center>
             </div>
             <div>
                 {
-                    DataScienceDetails.length > 0 ? <div  style={{display:"flex",justifyContent:"space-between",flexWrap:"wrap",margin:"0px auto", height: "auto",width:"95%" }}>
+                    EmbeddedDetails.length > 0 ? <div  style={{display:"flex",justifyContent:"space-between",flexWrap:"wrap",margin:"0px auto", height: "auto",width:"95%" }}>
                         {
-                            DataScienceDetails.map((item, index) => <div style={{marginBottom:"20px"}} key={index}>
+                            EmbeddedDetails.map((item, index) => <div style={{marginBottom:"20px"}} key={index}>
                                 <Card className='carddiv'>
                                     <img style={{ borderRadius: "20px", padding: "10px", width: "16rem", height: "16rem" }} variant="top" src={item.page} />
                                     <Card.Body>
@@ -43,4 +43,4 @@ const product3 = () => {
 }
 
 
-export default product3
+export default Bootstrapreact

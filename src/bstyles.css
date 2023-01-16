@@ -1,0 +1,18 @@
+.cdiv{
+    background-color: rgb(174, 235, 34);
+}
+.cdiv:hover{
+    background-color: green;
+}
+.carddiv{
+    margin-top: 0px;
+    height: 100%;
+    width: 17.5rem;
+    padding: 15px;
+    box-shadow:0px 0px 10px #333 ;
+}
+.carddiv:hover{
+    box-shadow: 0px 0px 20px #333 ;
+    background-color: powderblue;
+    transform:scale(1.05);
+}
