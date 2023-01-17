@@ -598,7 +598,7 @@ function Homepage() {
 
   return (
 
-    <React.Fragment>
+    <>
       {/*****weekdays in excel* Header *******/}
       <Header />
       {/****** Header End Here ******/}
@@ -628,7 +628,7 @@ function Homepage() {
             </div>
           </div>
           <div className={homestyle.latest}>
-           <center><h2 style={{height:"10%",background:"powderblue",padding:"10px"}}>Latest Updates & News</h2></center> 
+           <center><h4 style={{height:"10%",background:"powderblue",padding:"10px"}}>Latest Updates & News</h4></center> 
             <div style={{boxSizing:"border-box",height:"90%"}}>
                 <marquee className={homestyle.marquee} scrollamount="5" direction="up" > 
                         <div>
@@ -700,7 +700,7 @@ function Homepage() {
       {/********* Footer end Here *******/}
 
 
-    </React.Fragment >
+    </>
 
   )
 }
