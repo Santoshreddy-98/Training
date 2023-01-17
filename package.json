@@ -1,5 +1,6 @@
 {
   "name": "components",
+  "homepage": "https://sibay.com",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
