@@ -1,0 +1,27 @@
+{
+  "files": {
+    "main.css": "/static/css/main.552c1fe6.css",
+    "main.js": "/static/js/main.9dca5075.js",
+    "static/media/pyimg.png": "/static/media/pyimg.6cc43ce6c53067ffcad6.png",
+    "static/media/home_image.jpg": "/static/media/home_image.b71a7c996778da23d796.jpg",
+    "static/media/signin_form.jpg": "/static/media/signin_form.160b34e6a6466582ed33.jpg",
+    "static/media/Login_form.jpg": "/static/media/Login_form.2e4640d2edc59993e43e.jpg",
+    "static/media/VLSI_IMAGE.jpg": "/static/media/VLSI_IMAGE.a083d534e5a327f84bb6.jpg",
+    "static/media/reactjs.png": "/static/media/reactjs.5f2b452cc1a2ebc9b2a7.png",
+    "static/media/Devops.png": "/static/media/Devops.8e44cbd5cd70b878dcf1.png",
+    "static/media/data_analysis.jpg": "/static/media/data_analysis.f7e9d23857238f8dcda4.jpg",
+    "static/media/kalam.png": "/static/media/kalam.55fc3304b579952842ac.png",
+    "static/media/MEAN_image.png": "/static/media/MEAN_image.3ba53adb3bc2a1376dea.png",
+    "static/media/sibney.jpg": "/static/media/sibney.9053de8673b1b775e100.jpg",
+    "static/media/networking.jpeg": "/static/media/networking.672a4c6f10aeda54a255.jpeg",
+    "static/media/card_img.png": "/static/media/card_img.942a5891094842eda4f3.png",
+    "static/media/Embedded_image.jpg": "/static/media/Embedded_image.5008ff314f6dddd1365c.jpg",
+    "index.html": "/index.html",
+    "main.552c1fe6.css.map": "/static/css/main.552c1fe6.css.map",
+    "main.9dca5075.js.map": "/static/js/main.9dca5075.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.552c1fe6.css",
+    "static/js/main.9dca5075.js"
+  ]
+}
